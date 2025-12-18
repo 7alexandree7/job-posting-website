@@ -1,4 +1,6 @@
+
 import GitHubSvg from "@/app/svgFunctions/gitHubSvg";
+import { login } from "@/lib/auth";
 
 const Page = () => {
   
@@ -12,7 +14,9 @@ const Page = () => {
         </div>
         
         <div className="mt-8">
-          <button className="w-full flex items-center justify-center gap-3 px-4 py-3 border border-gray-300 rounded-lg text-gray-700 bg-white">
+          <button
+            onClick={login}
+            className="w-full flex items-center justify-center gap-3 px-4 py-3 border border-gray-300 rounded-lg text-gray-700 bg-white">
             <GitHubSvg />
             <span>Continue with GitHub</span>
           </button>
