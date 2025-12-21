@@ -26,3 +26,17 @@ export async function POST(request: Request) {
     return NextResponse.json({error: 'Something went wrong'}, {status: 500})
   }
 }
+
+
+export async function GET() {
+  
+  try {
+    const jobs = await prisma.job.findMany({orderBy: {postedAt: 'desc'}})
+    return NextResponse.json(jobs)
+  }
+  
+  catch(error) {
+    console.error(error)
+    return NextResponse.json({error: 'Something went wrong'}, {status: 500})
+  }
+}
