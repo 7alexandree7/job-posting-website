@@ -99,7 +99,8 @@ Este projeto foi desenvolvido com foco em aprendizado prático e aplicação rea
 
 ## 👨‍💻 Autor
 
-Desenvolvido por **Pedro machado**  
+Desenvolvido por **Alexandre* 
+GitHub: https://github.com/7alexandree7
 
 ---
 
